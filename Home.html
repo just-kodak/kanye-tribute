@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<button onclick="greetUser()">  Hey Click me</button>
+<script>
+    function greetUser() {
+        alert("Yo Kodak! Thanks for visiting the site, Welcome.");
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+        <nav id="mobile-nav">
+            <a href="Home.html"> Home<hr></a>
+            <a href="Music.html"> Music<hr></a>
+            <a href="Fashion.html"> Fashion<hr></a>
+            <a href="Projects.html"> Projects<hr></a>
+            <a href="Quotes.html"> Quotes<hr></a>
+            <a href="Contact.html"> Contact<hr></a>
+
+        </nav>
+    </header>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="ye.mp4" type="video/mp4">
+        your browser does not support the video tag.
+    </video>
+    <div class="intro-text"> Visionary.Artist.Icon.</div>
+    <div class="content">
+        <h1>"YEEZY MODE"</h1>
+
+
+    </div>
+    <div class="image-row">
+        <img src="1433125814507475086.jpg" width="300" height="200">
+    </div>
+    <script src="script.js"></script>
+    <button id="likeBtn">Like</button>
+    <p id="status"></p>
+
+    <script>
+        document.getElementById("likeBtn").addEventListener("click", () => {
+            document.getElementById("status").innerText = "Thanks for the like, Kodak!";
+        });
+    </script>
+    <button id="backtotop"> ^ Back to top</button>
+
+
+</body>
+
+</html>

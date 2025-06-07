@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<button onclick="greetUser()">  Page INFO</button>
+<script>
+    function greetUser() {
+        alert("Yo Kodak! This page allows you  to contact Kanye directly.");
+    }
+</script>
+
+
+<head>
+
+    <title> Contact </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+<a href="#top" class="top-btn">^ top</a>
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+        <nav id="mobile-nav">
+            <a href="Home.html"> Home<hr></a>
+            <a href="Music.html"> Music<hr></a>
+            <a href="Fashion.html"> Fashion<hr></a>
+            <a href="Projects.html"> Projects<hr></a>
+            <a href="Quotes.html"> Quotes<hr></a>
+            <a href="Contact.html"> Contact<hr></a>
+
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Contact section</h1>
+        <p> You can contact us by sending us an email <a href="mailto:chineduaya999@gmail.com">Yeezus@gmail.com</a></p>
+        <p><img src="115d038d-3521-45e1-8669-55bcb97b724a.jfif" width="300" height="300"></p>
+        <P> send us an email</P>
+        <form action="mailto:chineduaya999@gmail.com" method="post" enctype="text/plain">
+            <label for="name"> Your name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email"> Your email </label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message"> Your message to YE</label>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+    <button id="likeBtn">Like</button>
+    <p id="status"></p>
+
+    <script>
+        document.getElementById("likeBtn").addEventListener("click", () => {
+            document.getElementById("status").innerText = "Thanks for the like, Kodak!";
+        });
+    </script>
+    <button id="backtotop"> ^ Back to Top</button>
+
+</body>
+
+</html>

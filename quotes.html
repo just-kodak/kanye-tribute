@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<button onclick="greetUser()">  page INFO</button>
+<script>
+    function greetUser() {
+        alert("Yo Kodak! This is are famous quotes made by kanye.");
+    }
+</script>
+
+
+
+<head>
+    <title> Quotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+        <nav id="mobile-nav">
+            <a href="Home.html"> Home<hr></a>
+            <a href="Music.html"> Music<hr></a>
+            <a href="Fashion.html"> Fashion<hr></a>
+            <a href="Projects.html"> Projects<hr></a>
+            <a href="Quotes.html"> Quotes<hr></a>
+            <a href="Contact.html"> Contact<hr></a>
+
+        </nav>
+    </header>
+    <div class="content">
+        <h1> Words From YE</h1>
+        <p> Here you'll see some of Kanye's Quotes</p>
+        <hr>
+
+        <p><strong>"YE SPEAKS THE KANYE'S MIND, AN UNFILITERED GENIUS"</strong></p>
+        <hr>
+        <ul>
+            <li> I feel like i'm too busy writing history to read it. </li>
+            <li> My greatest pain in life is that i will never be able see myself perform live. </li>
+            <li> I am warhol, I am one of the most impactful artist of our generation. </li>
+            <li> Would you believe in what you believed in if you were the only one who believed it?. </li>
+            <li> People always say you can'tt please everybody. I think that's a cop-out. </li>
+            <li> I refuse to accept other People's ideas of happiness for me. </li>
+            <li> For me to say i wasn't a GENIUS, i'd just be lying to you and myself. </li>
+            <li> Reach for the stars so when you miss you land on the clouds. </li>
+            <li> Keep your nose out the sky, keep your heart to GOD, and keep your face to the rising sun</li>
+        </ul>
+        <p id="greeting"> Hello visitor!</p>
+        <button onclick="changeText()"> Click to personalize</button>
+        <script>
+            function changeText() {
+                document.getElementById("greeting").innerText = "Welcome back, Kodak";
+            }
+        </script>
+        <button onclick="toggleQuote()">Toggle Quote</button>
+        <p id="kanyeQuote" style="display: none;">“I still think I am the greatest.” – Kanye West</p>
+
+        <script>
+            function toggleQuote() {
+                const quote = document.getElementById("kanyeQuote");
+                quote.style.display = quote.style.display === "none" ? "block" : "none";
+            }
+        </script>
+
+
+    </div>
+    <script src="script.js"></script>
+    <button id="likeBtn">Like</button>
+    <p id="status"></p>
+
+    <script>
+        document.getElementById("likeBtn").addEventListener("click", () => {
+            document.getElementById("status").innerText = "Thanks for the like, Kodak!";
+        });
+    </script>
+    <button id="backtotop"> ^ Back to Top</button>
+
+
+
+
+
+</body>
+
+</html>

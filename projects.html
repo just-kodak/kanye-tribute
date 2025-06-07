@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<button onclick="greetUser()">  Page INFO</button>
+<script>
+    function greetUser() {
+        alert("Yo Kodak! This are the projects kanye did apart from his clothing brand.");
+    }
+</script>
+
+<head>
+
+    <title> Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+<a href="#top" class="top-btn" title="Back to Top">^</a>
+
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+        <nav id="mobile-nav">
+            <a href="Home.html"> Home<hr></a>
+            <a href="Music.html"> Music<hr></a>
+            <a href="Fashion.html"> Fashion<hr></a>
+            <a href="Projects.html"> Projects<hr></a>
+            <a href="Quotes.html"> Quotes<hr></a>
+            <a href="Contact.html"> Contact<hr></a>
+
+        </nav>
+    </header>
+    <div class="content">
+        <h1> Creative Projects</h1>
+        <P> The section discusses about some of Kanye West Creative Projects outside his music and clothing brand</P>
+        <hr>
+
+        <p><strong>Donda Academy</strong></p>
+        <p><img src="64758f3e2cc70b92ae6a0e8b_donda-sports-landscape.jpg" width="300" height="300"></p>
+        <p><strong>INFO:</strong> Donda Academy was a private Christian school founded by Kanye West in 2022, located in simi valley, California. Named after hid late mother, Donda West, the institution aimed to"prepare students to become the next generation
+            of leaders, thinkers, and innovators"</p>
+        <hr>
+
+        <h2> Stem Player </h2>
+        <p><img src="images (14).jfif" width="300" height="300"></p>
+        <p><strong>INFO:</strong> The Stem Player is a portable audio device developed by Kanye West in collaboration with british tech company Kano Computing.</p>
+        <hr>
+
+        <h3> Sunday Service</h3>
+        <p><img src="images (11).jfif" width="300" height="300"></p>
+        <P><strong>INFO:</strong> Sunday Service is a musical and spiritual gathering initiated by Kanye West in january 2019. These events feature gospel renditions of Kanye's songs and other spiritual music, performed by the Sunday Service Choir under
+            the direction of choir director Jason White</P>
+        <hr>
+
+
+    </div>
+    <script src="script.js"></script>
+    <button id="likeBtn">Like</button>
+    <p id="status"></p>
+
+    <script>
+        document.getElementById("likeBtn").addEventListener("click", () => {
+            document.getElementById("status").innerText = "Thanks for the like, Kodak!";
+        });
+    </script><button id="backtotop"> ^ Back to Top</button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<button onclick="greetUser()"> page INFO
+    </button>
+<script>
+    function greetUser() {
+        alert("Yo Kodak! This page is about the various fashion products that Kanye has produced.");
+    }
+</script>
+
+
+<head>
+
+    <title> Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+<a href="#top" class="top-btn">^ top</a>
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+        <nav id="mobile-nav">
+            <a href="Home.html"> Home<hr></a>
+            <a href="Music.html"> Music<hr></a>
+            <a href="Fashion.html"> Fashion<hr></a>
+            <a href="Projects.html"> Projects<hr></a>
+            <a href="Quotes.html"> Quotes<hr></a>
+            <a href="Contact.html"> Contact<hr></a>
+
+        </nav>
+    </header>
+
+
+    <div class="content">
+        <h1>Fashion section</h1>
+        <p>This section talks about kanye's personal products and collabortions over the years </p>
+        <hr>
+
+        <p><strong> Yeezy Season 5 Down Camouflage Coat</strong></p>
+        <p><img src="kanye1-b37ee402bbc5449aa774d2cbda7bd5bc.jpg" width="300" height="300"></p>
+        <P><strong>INFO:</strong> The Yeezy Season 5 Down Camouflage coat is a standout piece from Kanye west's 2017 collection, known for it's oversized fit,sherpa fleece lining and distintctive woodland camo pattern. This coat has become a sought-after
+            item among fashion enthusiasts and collectors </P>
+        <hr>
+
+        <h2> Yeezy Season 3 Coat</h2>
+        <p><img src="images (8).jfif" width="300" height="300"></p>
+        <p><strong> INFO:</strong> Yeezy Season 3 collection, unveiled by Kanye West in 2016, showcased a range of outerwear piece that have since become iconic in the fashion world. Characterized by oversized silhouettes, military-inspired designs and muted
+            color pallettes, these coats and jackets reflect Kanye's unique vision of contemporary streetwear.</p>
+        <hr>
+
+        <h3> Yeezy Season 4 Oversized Shirt </h3>
+        <p><img src="images.jfif" width="300" height="300"></p>
+        <p><strong>INFO:</strong> The Yeezy Season 4 collection, unveiled by Kanye West on September 7, 2016, during New York Fashion Week, marked a significant moment in the Yeezy fashion line. The show took place at Franklin D. Roosevelt Four Freedoms
+            Park on Roosevelt Island and was notable for its unique presentation and the challenges it faced.</p>
+        <hr>
+
+        <h4> Men Yeezy Desert Boot Oil</h4>
+        <p><img src="images (5).jfif" width="300" height="300"></p>
+        <p><strong>INFO:</strong> The adidas Yeezy Desert Boot 'Oil'(EG6463) is a rugged, military-inspired boot designed by Kanye West. Released in April 2019, this boot combines functionality with streetwear aesthetics.</p>
+        <hr>
+
+        <h5> Adidas Yeezy 500 Desert Rat</h5>
+        <p><img src="images (4).jfif" width="300" height="300"></p>
+        <p><strong>INFO:</strong> The Adidas Yeezy 500 Desert Rat, particularly in the "Bulsh" color way, is a notable relsease from Kanye West's collaboration with Adidas. Debuting in December 2017 through a limited pre-order, it saw a wider release in
+            April 2018. This model is distinguished by its chunky silhouette, combining suede, mesh, adn leather materials, and features an adiPRENE+ midsole for cushioning.</p>
+        <hr>
+
+        <h6> Adidas Yeezy Boost 350</h6>
+        <p><img src="images (9).jfif" width="300" height="300"></p>
+        <p><strong>INFO:</strong> The Adidas Yeezy Boost 350 V2 is a standout model from Kanye West's collaboration with Adidas, celebrated for its sleek design, comfort, and cultural impact. In Nigeria, pacticularly in Lagos, there are several avenues to
+            purchase both new and pre-owned pairs</p>
+        <hr>
+
+
+
+    </div>
+    <script src="script.js"></script>
+    <button id="likeBtn">Like</button>
+    <p id="status"></p>
+
+    <script>
+        document.getElementById("likeBtn").addEventListener("click", () => {
+            document.getElementById("status").innerText = "Thanks for the like, Kodak!";
+        });
+    </script>
+    <h2> What is your favorite Kanye's clothing apparel</h2>
+    <input type="text" id="favApparel" placeholder="Enter here...">
+    <button onclick="saveApparel()">Save
+    </button>
+    <p id="savedApparel"></p>
+    <button id="backtotop"> ^ Back to Top</button>
+
+</body>
+
+</html>

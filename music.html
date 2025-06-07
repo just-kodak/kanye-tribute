@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<button onclick="greetUser()"> Page INFO</button>
+<script>
+    function greetUser() {
+        alert("Yo Kodak! This page is about kanye west studio albums.");
+    }
+</script>
+
+
+<head>
+
+    <title> Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+</head>
+<a href="#top" class="top-btn">^ top</a>
+
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">=</div>
+        <nav id="mobile-nav">
+            <a href="Home.html"> Home<hr></a>
+            <a href="Music.html"> Music<hr></a>
+            <a href="Fashion.html"> Fashion<hr></a>
+            <a href="Projects.html"> Projects<hr></a>
+            <a href="Quotes.html"> Quotes<hr></a>
+            <a href="Contact.html"> Contact<hr></a>
+
+        </nav>
+    </header>
+    <div class="content">
+        <h1> This the discography timeline of kanye west</h1>
+        <P><strong>The Collage Dropout</strong></P>
+        <p><img src="minimalist album poster.jfif" width="300" height="400"></p>
+        <p><strong> Release Year</strong>: 2004</p>
+        <p><strong> Hit Song</strong>: Through the Wire</p>
+        <p><strong> Description</strong>: Kanye's debut album that challenged mainstream rap by blending soulful samples with honest lyrics about faith, education, and personal struggel.</p>
+        <hr>
+
+        <h2>Graduation</h2>
+        <p><img src="Graduation By Kanye West Minimalist Album Poster.jfif" width="300" height="400"></p>
+        <p><strong> Release Year:</strong> 2007</p>
+        <p><strong> Hit Song</strong>: Stronger</p>
+        <p><strong>Description</strong>: Kanye embraced electronic and stadium sounds, creating a futuristic feel that marked a shif in hip-hop.</p>
+        <hr>
+
+        <h3>808s & Heartbreak</h3>
+        <p><img src="3ee3dd58-d8a2-4574-85a6-618250f7ee0d.jfif" width="300" height="400"></p>
+        <p><strong> Release Year:</strong> 2008</p>
+        <p><strong> Hit Song:</strong> Heartless</p>
+        <p><strong> Description:</strong> A deeply emotional and experimental album using Auto-Tune and minimal production to express grife and isolation.</p>
+        <hr>
+
+        <h4>My Beautiful Dark Twisted Fantasy</h4>
+        <p><img src="9945efbe-a91f-46c6-b39f-ce5a1f6b30e2.jfif" width="300" height="400"></p>
+        <P><strong> Release Year:</strong> 2010</P>
+        <p><strong> Hit Song:</strong> Power</p>
+        <p><strong>Description:</strong> A critically acclaimed masterpiece blending orchesral, rock, and hip-hop elements-considered one of the greatest albums of all time.</p>
+        <hr>
+
+        <h5> Yeezus</h5>
+        <p><img src="YEEZUS.jfif" width="300" height="400"></p>
+        <p><strong> Release Year:</strong> 2013</p>
+        <p><strong> Hit Song:</strong> Black Skinhead</p>
+        <p><strong> Description:</strong> Raw, aggressive, and industrial-this album pushes boundaries and divided fans with its minimalism and dark themes. </p>
+        <hr>
+
+        <h6> The Life Of Pablo</h6>
+        <P><img src="3022fd5b-ba34-4782-a3c8-b12f1efa6ba7.jfif" width="300" height="400"></P>
+        <p><strong> Release Year:</strong> 2016</p>
+        <p><strong> Hit Song:</strong> Famous</p>
+        <p><strong> Description:</strong> A chaotic yet innovative album that was updated even after release-blending gospel, trap, and soul influences.</p>
+        <hr>
+
+        <h6> Jesus Is King</h6>
+        <p><img src="jesusisking.jfif" width="300" height="400"></p>
+        <p><strong> Release Year:</strong> 2019</p>
+        <p><strong> Hit Song:</strong> Follow God</p>
+        <p><strong> Description:</strong> A Gospel rap album expressing Kanye's christian faith, a bold depature from his previous secular music.</p>
+        <hr>
+
+        <h6> Donda</h6>
+        <P><img src="a4bcd633-5fac-48bb-b545-c6e79fa330ef.jfif" width="300" height="400"></P>
+        <p><strong> Release:</strong> 2021</p>
+        <P><strong> Hit Song:</strong> Hurricane</P>
+        <P><strong> Description:</strong> A massive, emotional project dedicated to his late mother, Donda West-featuring spiritual themes, heavy production and a wide range of collaborators.</P>
+
+
+    </div>
+
+    <script src="script.js"></script>
+    <button id="likeBtn">Like</button>
+    <p id="status"></p>
+
+    <script>
+        document.getElementById("likeBtn").addEventListener("click", () => {
+            document.getElementById("status").innerText = "Thanks for the like, Kodak!";
+        });
+    </script>
+
+    <h2>What’s your favorite Kanye album?</h2>
+
+    <input type="text" id="favSong" placeholder="Type song name">
+    <button onclick="saveAlbum()">Save</button>
+    <p id="confirm"></p>
+
+    <input type="text" id="favAlbum" placeholder="Your favorite Kanye album">
+    <button onclick="saveAlbum()">Save</button>
+    <p id="confirm"></p>
+
+    <script>
+        function saveAlbum() {
+            const album = document.getElementById("favSong").value;
+            localStorage.setItem("kanyeAlbum", album);
+            alert("Saved: " + album);
+        }
+    </script>
+    <button id="backtotop"> ^ Back to Top</button>
+
+</body>
+
+</html>
